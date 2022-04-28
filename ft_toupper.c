@@ -6,11 +6,11 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 13:25:36 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/04/27 13:29:06 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/04/27 23:43:50 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stddef.h>
 //#include <stdio.h>
 
 int	ft_toupper(char *str)

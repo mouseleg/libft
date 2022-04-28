@@ -6,11 +6,11 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 13:15:29 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/04/27 20:34:16 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/04/27 23:44:00 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stddef.h>
 //#include <stdio.h>
 
 int	ft_isprint(char *str)

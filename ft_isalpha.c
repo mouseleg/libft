@@ -6,11 +6,11 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 12:45:21 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/04/27 13:33:45 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/04/27 23:44:07 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stddef.h>
 //#include <stdio.h>
 
 int	ft_str_isalpha(char *str)

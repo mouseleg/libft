@@ -6,12 +6,12 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 20:32:57 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/04/26 22:31:07 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/04/27 23:43:53 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include <stddef.h>
+//#include <stdio.h>
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 
@@ -31,9 +31,9 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	return (*s1 - *s2);
 }
 
- int	main(void)
+/*  int	main(void)
 {	
-	/*case 1: s1 > s2 function returns +value
+	case 1: s1 > s2 function returns +value
 	char	s1[] = "icecream";
 	char	s2[] = "chocolatecake";
 
@@ -41,7 +41,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	char	s1[] = "chocolatecake";
 	char	s2[] = "icecream";
 
-	case 3: s1 == s2 function returns 0*/
+	case 3: s1 == s2 function returns 0
 	char	s1[] = "Chocolatecake";
 	char	s2[] = "ChocolatecakhfdfuewhfuewE";
 
@@ -53,4 +53,4 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	printf("%s\n", s1);
 	printf("%s\n", s2);
 	return (0);
-}
+} */

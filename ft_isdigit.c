@@ -6,11 +6,11 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 12:51:59 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/04/27 12:52:39 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/04/27 23:44:03 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stddef.h>
 //#include <stdio.h>
 
 int	ft_str_isdigit(char *str)
