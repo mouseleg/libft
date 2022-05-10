@@ -6,14 +6,14 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 12:45:21 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/04/27 23:44:07 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/04/28 21:05:57 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 //#include <stdio.h>
 
-int	ft_str_isalpha(char *str)
+int	ft_isalpha(char *str)
 {
 	int	i;
 
@@ -30,7 +30,7 @@ int	ft_str_isalpha(char *str)
 
 /* int	main(void)
 {
-	printf("%d\n", ft_str_isalpha(""));
+	printf("%d\n", ft_isalpha(""));
 	return (0);
 }
  */

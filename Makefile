@@ -1,5 +1,6 @@
 NAME = libft.a
 
+
 OBJECT = ft_isalnum.o \
     ft_isascii.o \
     ft_isdigit.o \

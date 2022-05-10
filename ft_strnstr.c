@@ -1,39 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/27 13:25:36 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/10 00:31:29 by rgrollma         ###   ########.fr       */
+/*   Created: 2022/04/28 21:07:47 by rgrollma          #+#    #+#             */
+/*   Updated: 2022/05/10 19:26:29 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include <stdio.h>
+#include <string.h>
 
-int	ft_toupper(int c)
+//char *strnstr(const char *s1, const char *s2, size_t len)
+char ft_strnstr(const char *s1, const char *s2, size_t len)
+//this is a char function, so it has to return something
 {
-	if (c >= 'a' && c <= 'z')
-	{
-		c -= 32;
-	}
-	return (c);
+    int i;
+
+    i = 0;
+    while()
+    {
+        
+    }
+
 }
 
-/* int	main(void)
+int main(void)
 {
-	char c = 'a';
-	printf("%c\n"); 
-	ft_toupper(c));
-	return (0);
-} */
-
-int	main(void)
-{
-	char	c = 'a';
-	printf("%c\n", ft_toupper(c));
-	//ft_toupper(c); wieso geht das nicht wenn ich dieses Argument eine Zeile nach oben oder unter versetzte?
-	return (0);
+    return (0);
 }
