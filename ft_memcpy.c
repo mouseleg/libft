@@ -6,12 +6,14 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/28 20:32:58 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/04/28 20:56:37 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/14 01:04:13 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
+#include "libft.h"
+//void *memcpy(void *restrict dest, const void *restrict src, size_t n);
 
 char	*ft_memcpy(char *dest, char *src)
 {	

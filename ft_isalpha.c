@@ -6,12 +6,12 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 12:45:21 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/04/28 21:05:57 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/13 13:54:39 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
-//#include <stdio.h>
+#include <stdio.h>
 
 int	ft_isalpha(char *str)
 {
@@ -28,9 +28,8 @@ int	ft_isalpha(char *str)
 	return (1);
 }
 
-/* int	main(void)
+ int	main(void)
 {
 	printf("%d\n", ft_isalpha(""));
 	return (0);
 }
- */

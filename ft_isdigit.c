@@ -6,12 +6,13 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 12:51:59 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/04/28 21:06:36 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/14 00:56:31 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 //#include <stdio.h>
+#include "libft.h"
 
 int	ft_isdigit(char *str)
 {

@@ -6,12 +6,13 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 20:32:46 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/01 19:21:58 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/14 00:56:04 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 //#include <stdio.h>
+#include "libft.h"
 
 int	ft_strlen(char *str)
 {
