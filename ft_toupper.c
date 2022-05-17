@@ -6,12 +6,13 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 13:25:36 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/11 19:52:03 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/17 21:24:36 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 #include <stdio.h>
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

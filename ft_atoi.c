@@ -6,12 +6,13 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 17:39:03 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/14 01:32:41 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/15 15:40:39 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+/* #include <stdio.h>
+#include <stdlib.h> */
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {
@@ -36,7 +37,7 @@ int	ft_atoi(const char *nptr)
 	return (i * j);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char a[] = "1235";  //char *a;
 	int	result;
@@ -46,4 +47,4 @@ int	main(void)
 	result = ft_atoi(a);
 	printf("%d\n", result);
 	return (0);
-}
+} */

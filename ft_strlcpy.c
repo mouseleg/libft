@@ -1,35 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/27 12:45:21 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/16 12:00:01 by rgrollma         ###   ########.fr       */
+/*   Created: 2022/05/14 22:24:11 by rgrollma          #+#    #+#             */
+/*   Updated: 2022/05/16 12:08:57 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <unistd.h>
 #include <stdio.h>
+#include "libft.h"
+#include <string.h>
 
-int	ft_isalpha(char *str)
+size_t strlcpy(char * restrict d, const char * restrict s, size_t dstsize)
+//int	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (*(s + i) != '\0')
 	{
-		if (!((str[i] >= 'A' && 'Z' >= str[i]) || \
-		(str[i] >= 'a' && 'z' >= str[i])))
-			return (0);
-		i++;
+		(*d[i]++ = *s[i]++)
 	}
-	return (1);
+	i++;
+	return (i);
 }
 
- int	main(void)
+int	main(void)
 {
-	printf("%d\n", ft_isalpha(""));
-	return (0);
+	char	*s;
+
+	s[] = "this is for YOU";
+	d[] = "Thanks";
+	printf("%s\n", ft_strlcpy(d));
 }

@@ -1,35 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/27 12:45:21 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/16 12:00:01 by rgrollma         ###   ########.fr       */
+/*   Created: 2022/05/16 20:51:18 by rgrollma          #+#    #+#             */
+/*   Updated: 2022/05/16 22:14:38 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include <stddef.h>
 #include <stdio.h>
+#include "libft.h"
 
-int	ft_isalpha(char *str)
+char	*ft_strdup(const char *s)
 {
-	int	i;
-
+	int i;
+	int srclen;
+	char *cpy;
+	
+	srclen = 0;
 	i = 0;
-	while (str[i])
+	while (s[srclen] != '\0') //for malloc, to check length
+		srclen++;
+	cpy = (char *)malloc(sizeof(char) * (srclen + 1));
+	if (!cpy)
+		return (NULL);
+	while (i < srclen)
 	{
-		if (!((str[i] >= 'A' && 'Z' >= str[i]) || \
-		(str[i] >= 'a' && 'z' >= str[i])))
-			return (0);
+		cpy[i] = s[i];
 		i++;
 	}
-	return (1);
+	return(cpy);
 }
 
- int	main(void)
-{
-	printf("%d\n", ft_isalpha(""));
+int main(void)
+{	
+	char src[] = "WASCOOLES###";
+	char *cpy;
+	cpy = ft_strdup(src);
+	printf("%s\n", cpy);
 	return (0);
 }

@@ -6,12 +6,12 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 12:51:59 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/14 00:56:31 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/15 00:36:27 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
-//#include <stdio.h>
+#include <stdio.h>
 #include "libft.h"
 
 int	ft_isdigit(char *str)
@@ -28,8 +28,8 @@ int	ft_isdigit(char *str)
 	return (1);
 }
 
-/* int	main(void)
+ int	main(void)
 {
-	printf("%d\n", ft_isdigit("sfdhagefzegaf"));
+	printf("%d\n", ft_isdigit("1111"));
 	return (0);
-} */
+}

@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 20:32:46 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/14 00:56:04 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/16 20:24:48 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 //#include <stdio.h>
 #include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(char *str)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (*(str + i) != '\0')

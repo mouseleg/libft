@@ -1,35 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/27 12:45:21 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/16 12:00:01 by rgrollma         ###   ########.fr       */
+/*   Created: 2022/05/16 12:03:33 by rgrollma          #+#    #+#             */
+/*   Updated: 2022/05/16 12:09:15 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
+#include <unistd.h>
+#include "libft.h"
 
-int	ft_isalpha(char *str)
+void ft_putnbr_fd(int n, int fd)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		if (!((str[i] >= 'A' && 'Z' >= str[i]) || \
-		(str[i] >= 'a' && 'z' >= str[i])))
-			return (0);
-		i++;
-	}
-	return (1);
+    int x;
+    
+    x = n + '0';
+    write(fd, &x, 1);
 }
 
- int	main(void)
-{
-	printf("%d\n", ft_isalpha(""));
+int	main(void)
+{	
+	ft_putnbr_fd();
 	return (0);
 }
