@@ -6,54 +6,42 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/28 20:32:58 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/14 01:04:13 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/18 15:54:11 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 #include "libft.h"
-//void *memcpy(void *restrict dest, const void *restrict src, size_t n);
 
-char	*ft_memcpy(char *dest, char *src)
+void *ft_memcpy(void *dest, const void *src, size_t n)
 {	
-	int	i;
+	size_t			i;
+	unsigned char	*dest2;
+	unsigned char	*src2;
 
 	i = 0;
-	while (src[i] != '\0')
+	dest2 = (unsigned char *) dest;
+	src2 = (unsigned char *) src;
+	if (!dest || !src)
+		return (NULL);
+	while (i < n)
 	{
-		dest[i] = src[i];
+		dest2[i] = src2[i];
 		i++;
 	}
-	dest[i] = '\0';
 	return (dest);
 }
 
 /*  int	main(void)
 {
-	char	src[] = "copy this";
-    char    dest[100];
+	char	src[] = "XXXXXXXXXXXXXXXXXXXXXXXXXXX";
+    char    dest[] = "ppppppppppppppppp";
+	size_t	n;
 
-	ft_memcpy(dest, src);
+	n = 5;
+	ft_memcpy(dest, src, n);
     printf("src: %s\n", src);
 	printf("dest: %s\n", dest);
 	return (0);
-} 
- */
-
-/* int main()
-{
-    char src[] = "copy this!";
-    char dest[100];
-
-    char *dest_ptr = memcpy(dest, src, strlen(src) + 1);
-
-    printf("src: %s\n", src);
-    printf("dest: %s\n", dest);
-
-    printf("dest_ptr: %p", dest_ptr);
-    printf("dest: %p\n", dest);
-
-    return (0);
-}
- */
+} */
