@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 20:32:57 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/18 17:51:18 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/18 20:07:25 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ int	ft_strncmp(char *s1, char *s2, size_t len)
 
 	string1 = (unsigned char *)s1;
 	string2 = (unsigned char *)s2;
-
 	if (!len)
 		return (0);
 	while (string1 && string2 && len--)

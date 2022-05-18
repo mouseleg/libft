@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 00:44:57 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/14 03:13:39 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/18 19:50:10 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,16 @@
 
 int	ft_isascii(int c)
 {
-   while (c >= ' ' && c <= '~')
-   {
-	   if (!(c >= ' ' && '~' >= c))
-	   return (0);
-	   c++;
-   }
-   return (1);
+	while (c >= ' ' && c <= '~')
+	{
+		if (!(c >= ' ' && '~' >= c))
+			return (0);
+		c++;
+	}
+	return (1);
 }
- 
-int main(void)
+
+/* int main(void)
 { 
   	printf("%d    ", 'c');
     if (ft_isascii('c'))
@@ -37,4 +37,4 @@ int main(void)
          printf("non ASCII character\n");
    	}
    return 0;
-}
+} */
