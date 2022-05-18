@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 18:58:22 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/13 22:13:06 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/18 17:13:09 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	ft_putendl_fd(char *s, int fd)
 	write(fd, "\n", 1);
 }
 
-int main()
+/* int main()
 {
     int    fd;
     
@@ -47,3 +47,4 @@ int main()
 	}
 	return (0);
 }
+ */

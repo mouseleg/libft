@@ -1,33 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/28 21:07:47 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/18 13:32:04 by rgrollma         ###   ########.fr       */
+/*   Created: 2022/05/18 15:56:02 by rgrollma          #+#    #+#             */
+/*   Updated: 2022/05/18 16:31:16 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <string.h>
 #include "libft.h"
 
-char    ft_strnstr(const char *s1, const char *s2, size_t len)
-
+void	ft_bzero(void *s, size_t n)
 {
-    int i;
+	unsigned char	*source;
 
-    i = 0;
-    while()
-    {
-        
-    }
-
+	source = s;
+	while (n--)
+		*source++ = '0';
 }
 
+/* #include <stdio.h>
 int main(void)
-{
-    return (0);
-}
+{	
+	size_t	n;
+	char	scr[] = "XXXX";	
+
+	//n = sizeof(scr)-1;//-1 !=Müll, nur bei sizeof
+	n = 42;
+	ft_bzero(scr, n);
+	printf("%s\n", scr);
+	return (0);
+} */

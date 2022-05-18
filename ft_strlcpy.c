@@ -6,34 +6,34 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 22:24:11 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/18 13:40:42 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/18 17:53:04 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
 #include "libft.h"
-#include <string.h>
 
-size_t	strlcpy(char *restrict d, const char *restrict s, size_t dstsize)
-//int	ft_strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
+	unsigned char	*s;
+	unsigned char	*d;
 
+	s = (unsigned char *)src;
+	d = (unsigned char *)dst;
 	i = 0;
-	while (*(s + i) != '\0')
+	while (i < size)
 	{
-		(*d[i]++ = *s[i]++);
+		(*(d + i) = *(s + i));
 	}
 	i++;
 	return (i);
 }
 
+/*
+#include <stdio.h> 
 int	main(void)
 {
-	char	*s;
-
-	s[] = "this is for YOU";
-	d[] = "Thanks";
-	printf("%s\n", ft_strlcpy(d));
-}
+	char	s[] = "this is for YOU";
+	char	d[] = "Thanks";
+	printf("%zu\n", ft_strlcpy(s, d, 5));
+} */

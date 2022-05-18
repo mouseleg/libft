@@ -1,80 +1,49 @@
-SRC	=	ft_atoi	\
-			ft_bzero	\
-			ft_calloc	\
-			ft_isalnum	\
-			ft_isalpha	\
-			ft_isascii	\
-			ft_isdigit	\
-			ft_isprint	\
-			ft_itoa	\
-			ft_memchr	\
-			ft_memcmp	\
-			ft_memcpy	\
-			ft_memmove	\
-			ft_memset	\
-			ft_putchar_fd	\
-			ft_putendl_fd	\
-			ft_putnbr_fd	\
-			ft_putstr_fd	\
-			ft_split	\
-			ft_strchr	\
-			ft_strdup	\
-			ft_striteri	\
-			ft_strjoin	\
-			ft_strlcat	\
-			ft_strlcpy	\
-			ft_strlen	\
-			ft_strmapi	\
-			ft_strncmp	\
-			ft_strnstr	\
-			ft_strrchr	\
-			ft_strtrim	\
-			ft_substr	\
-			ft_tolower	\
-			ft_toupper	\
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/05/18 16:36:57 by rgrollma          #+#    #+#              #
+#    Updated: 2022/05/18 17:34:28 by rgrollma         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
-B_SRC =	ft_lstnew	\
-			ft_lstadd_front	\
-			ft_lstsize	\
-			ft_lstlast	\
-			ft_lstadd_back	\
-			ft_lstdelone	\
-			ft_lstclear	\
-			ft_lstiter	\
-			ft_lstmap	\
+NAME = libft.a
 
-B_SRCS		= $(addsuffix .c, ${SRCBONUS})
+SRCS = ft_isdigit.c ft_isprint.c\
+ft_putchar_fd.c ft_substr.c ft_atoi.c ft_putendl_fd.c\
+ft_strlcpy.c ft_tolower.c ft_bzero.c ft_putnbr_fd.c ft_strlen.c\
+ft_toupper.c ft_isalnum.c\
+ft_strncmp.c ft_isalpha.c ft_memcpy.c\
+ft_isascii.c ft_strdup.c\
 
-SRCS		= $(addsuffix .c, ${SRC})
+BONUS = ft_lstadd_back.c ft_lstadd_front.c
 
-HEAD		= ./includes/ 
+OBJS = ${SRCS:.c=.o}
 
-OBJS		= ${SRCS:.c=.o}
+OBJSBONUS = ${BONUS:.c=.o}
 
-B_OBJS		= ${B_SRCS:.c=.o}
+CC		= gcc
+RM		= rm -f
 
-NAME		= libft.a
+CFLAGS	= -Wall -Wextra -Werror
 
-CC			= gcc
-RM			= rm -f
-AR			= ar rc
-RN			= ranlib
+$(NAME): ${OBJS}
+		ar rcs ${NAME} ${OBJS}
 
-CFLAGS		= -Wall -Wextra -Werror
+bonus:	${OBJS} ${OBJSBONUS}
+		ar rcs ${NAME} ${OBJS} ${OBJSBONUS}
 
-.c.o:
-			${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
-
-$(NAME):	${OBJS}
-			${AR} ${NAME} ${OBJS} ${B_OBJS}
-			${RN} ${NAME}
-
-all:		$(NAME)
+all:	${NAME}
 
 clean:
-			${RM} ${OBJS}
+		${RM} ${OBJS} ${OBJSBONUS}
 
-fclean:		clean
-			${RM} $(NAME)
+fclean:	clean
+		${RM} ${NAME}
 
-re:			fclean all
+re:		fclean all
+
+.PHONY:	bonus all clean fclean re
