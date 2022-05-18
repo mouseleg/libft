@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 22:24:11 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/16 12:08:57 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/18 13:40:42 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,15 @@
 #include "libft.h"
 #include <string.h>
 
-size_t strlcpy(char * restrict d, const char * restrict s, size_t dstsize)
+size_t	strlcpy(char *restrict d, const char *restrict s, size_t dstsize)
 //int	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (*(s + i) != '\0')
 	{
-		(*d[i]++ = *s[i]++)
+		(*d[i]++ = *s[i]++);
 	}
 	i++;
 	return (i);

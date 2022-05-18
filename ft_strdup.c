@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 20:51:18 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/16 22:14:38 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/18 13:12:06 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,13 @@
 
 char	*ft_strdup(const char *s)
 {
-	int i;
-	int srclen;
-	char *cpy;
-	
+	int		i;
+	int		srclen;
+	char	*cpy;
+
 	srclen = 0;
 	i = 0;
-	while (s[srclen] != '\0') //for malloc, to check length
+	while (s[srclen] != '\0')
 		srclen++;
 	cpy = (char *)malloc(sizeof(char) * (srclen + 1));
 	if (!cpy)
@@ -33,14 +33,14 @@ char	*ft_strdup(const char *s)
 		cpy[i] = s[i];
 		i++;
 	}
-	return(cpy);
+	return (cpy);
 }
 
-int main(void)
+/* int main(void)
 {	
 	char src[] = "WASCOOLES###";
 	char *cpy;
 	cpy = ft_strdup(src);
 	printf("%s\n", cpy);
 	return (0);
-}
+} */

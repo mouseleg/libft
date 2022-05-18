@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 12:45:21 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/16 12:00:01 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/18 13:36:24 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ int	ft_isalpha(char *str)
 	return (1);
 }
 
- int	main(void)
+/*  int main(void)
 {
 	printf("%d\n", ft_isalpha(""));
 	return (0);
-}
+} */

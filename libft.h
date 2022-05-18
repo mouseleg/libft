@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 21:22:47 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/17 21:24:55 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/18 12:46:57 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 # include <string.h>
 # include <stdlib.h>
-#include <stddef.h>
-#include <stdio.h>
+# include <stddef.h>
+# include <stdio.h>
 # include <unistd.h>
 
 typedef struct s_list

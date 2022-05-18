@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 13:25:36 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/17 21:24:36 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/18 13:30:55 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,18 +23,9 @@ int	ft_toupper(int c)
 	return (c);
 }
 
-/* int	main(void)
-{
-	char c = 'a';
-	printf("%c\n"); 
-	ft_toupper(c));
-	return (0); ft_toupper(c); wieso geht das nicht wenn ich dieses Argument eine Zeile nach oben oder unter versetzte?
-} 
-
-int	main(void)
+/*int	main(void)
 {
 	char	c = 'a';
 	printf("%c\n", ft_toupper(c));
-	//ft_toupper(c); wieso geht das nicht wenn ich dieses Argument eine Zeile nach oben oder unter versetzte?
 	return (0);
 }*/
