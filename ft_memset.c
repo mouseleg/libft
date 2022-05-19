@@ -1,37 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/14 00:44:57 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/19 20:21:25 by rgrollma         ###   ########.fr       */
+/*   Created: 2022/05/19 22:40:44 by rgrollma          #+#    #+#             */
+/*   Updated: 2022/05/19 23:25:52 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-//#include <ctype.h>
 #include "libft.h"
 
-int	ft_isascii(int c)
+void *ft_memset(void *s, int c, size_t n)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	else
-		return (0);
+	unsigned char	*replace;
+
+	replace = (unsigned char *) s;
+	while (n)
+	{
+		*replace++ = c;
+		n--;
+	}
+	return (s);
 }
 
-/* int main(void)
-{ 
-  	printf("%d    ", 'c');
-    if (ft_isascii('c'))
-	{
-         printf("is the ascii value of the ascii character %c\n", 'c');
-	}	
-	else
-	{
-         printf("non ASCII character\n");
-   	}
-   return 0;
+/* #include <stdio.h>
+int main (void)
+{
+	int 	c;
+	size_t	n;
+	char	src[] = "XXXXXXXXXXXXXXXXXXX";
+
+	c = '5';
+	n = 10;
+	ft_memset(src, c, n);
+	printf("%s\n", src);
+	return (0);
 } */

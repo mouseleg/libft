@@ -6,29 +6,22 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 12:45:21 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/18 13:36:24 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/19 22:26:05 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_isalpha(char *str)
+int	ft_isalpha(int c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		if (!((str[i] >= 'A' && 'Z' >= str[i]) || \
-		(str[i] >= 'a' && 'z' >= str[i])))
-			return (0);
-		i++;
-	}
-	return (1);
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+		return (1);
+	else
+		return (0);
 }
 
-/*  int main(void)
+/* #include <stdio.h> 
+int main(void)
 {
 	printf("%d\n", ft_isalpha(""));
 	return (0);

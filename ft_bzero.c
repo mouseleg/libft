@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 15:56:02 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/18 16:31:16 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/19 20:25:24 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_bzero(void *s, size_t n)
 
 	source = s;
 	while (n--)
-		*source++ = '0';
+		*source++ = 0;
 }
 
 /* #include <stdio.h>

@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 12:51:59 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/18 17:15:45 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/19 22:29:26 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,12 @@
 #include <stdio.h>
 #include "libft.h"
 
-int	ft_isdigit(char *str)
+int	ft_isdigit(int c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		if (!((str[i] >= '0' && '9' >= str[i])))
-			return (0);
-		i++;
-	}
-	return (1);
+	if ((c >= '0' && c <= '9'))
+		return (1);
+	else
+		return (0);
 }
 
 /*  int main(void)
