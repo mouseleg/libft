@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 21:22:47 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/19 23:33:38 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/20 10:17:07 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ void	ft_bzero(void *s, size_t n);
 char	*ft_itoa(int n);
 void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
+void	*ft_memmove(void *dest, const void *src, size_t n);
 
 #endif
 

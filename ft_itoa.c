@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 20:44:19 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/19 20:06:36 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/20 10:18:47 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ static int	len_count(int n)
 
 char	*ft_itoa(int n)
 {
-	size_t len;
-	char *string;
+	size_t	len;
+	char	*string;
 
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));

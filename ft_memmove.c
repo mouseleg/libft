@@ -1,42 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/19 23:31:05 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/20 09:25:25 by rgrollma         ###   ########.fr       */
+/*   Created: 2022/05/20 09:47:24 by rgrollma          #+#    #+#             */
+/*   Updated: 2022/05/20 10:40:01 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char	*search;
+	char		*d;
+	const char	*s;
 
-	search = (unsigned char *) s;
-	while (n--)
+	if (!dest || !src)
+		return (NULL);
+	d = dest;
+	s = src;
+	if (d < s)
 	{
-		if (*search == (unsigned char) c)
-			return ((void *) s);
-		search++;
-		s++;
+		while (n--)
+		{
+			*d++ = *s++;
+		}
 	}
-	return (NULL);
+	else
+	{
+		while (n--)
+			*(d + n) = *(s + n);
+	}
+	return (dest);
 }
 
 /* #include <stdio.h>
 int main(void)
 {
-	int		i;
-	size_t	len;
-	char	src[] = "XXXX0XXXXX";
+	size_t len;
+	char	src[] = "XXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxx";
+	char	dest[] = "aaaaaaaaaaaaaaaaaaaaaaa";
 
-	i = '0';
-	len = 8;
-	printf("%s\n", ft_memchr(src, i, len));
+	len = 20;
+	ft_memmove(src, dest, len);
+	printf("src: %s\n", src);
+	printf("dest: %s\n", dest);
 	return (0);
-}
- */
+} */

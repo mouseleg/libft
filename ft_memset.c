@@ -6,13 +6,13 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 22:40:44 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/19 23:25:52 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/20 09:26:27 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memset(void *s, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*replace;
 
