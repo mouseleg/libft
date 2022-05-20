@@ -1,35 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/25 20:32:46 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/20 21:01:07 by rgrollma         ###   ########.fr       */
+/*   Created: 2022/05/20 18:32:43 by rgrollma          #+#    #+#             */
+/*   Updated: 2022/05/20 19:21:36 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-size_t	ft_strlen(const char *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (*(str + i) != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-
-
-/* int	main(void)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	char	*str;
 
-	str = "15_Characters..";
-	printf("String_with_15_chars (15): %ld\n", ft_strlen(str));
+	str = (char *)malloc (size * (nmemb + 1));
+	if (!str)
+		return (NULL);
+	while (nmemb--)
+		str[nmemb] = '\0';
+	return (str);
+}
+
+/* 
+#include <stdlib.h>
+#include <stdio.h>
+int main(void)
+{
+	size_t n;
+	size_t i;
+	char	*dest;
+
+	n = 10;
+	i = 1;
+	dest = ft_calloc(n, i);
+	printf("%s\n", dest);
+	dest[8] = 65;
+	printf("%s\n", dest + 8);
+	free(dest);
+	return (0);
 } */

@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 20:44:19 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/20 10:18:47 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/20 18:26:48 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,9 @@ static int	len_count(int n)
 		n = n * -1;
 		length++;
 	}
-	while (n /= 10)
+	while (n / 10)
 	{
+		n = n / 10;
 		length++;
 	}
 	return (length);

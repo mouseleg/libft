@@ -1,35 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/25 20:32:46 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/20 21:01:07 by rgrollma         ###   ########.fr       */
+/*   Created: 2022/05/20 20:39:03 by rgrollma          #+#    #+#             */
+/*   Updated: 2022/05/20 21:03:16 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-size_t	ft_strlen(const char *str)
+char	*ft_strrchr(const char *str, int c)
 {
-	size_t	i;
+	int		len;
+	char	*s;
 
-	i = 0;
-	while (*(str + i) != '\0')
+	s = (char *)str;
+	len = ft_strlen(s);
+	while (len >= 0)
 	{
-		i++;
+		if (s[len] == (char)c)
+		{
+			return (s + len);
+		}
+		len--;
 	}
-	return (i);
+	return (NULL);
 }
 
-
-/* int	main(void)
+/* int main(void)
 {
-	char	*str;
+	const char string[] = "HHHHHHHHHcLLLLLc";
+	const char ch = '\0';
+	char		*p;
 
-	str = "15_Characters..";
-	printf("String_with_15_chars (15): %ld\n", ft_strlen(str));
+	p = ft_strrchr(string, ch);
+	printf("string starting from last occurence %c is: %s\n", ch, p);
 } */
