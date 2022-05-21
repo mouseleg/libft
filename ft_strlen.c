@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 20:32:46 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/21 12:48:39 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/21 18:15:34 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ size_t	ft_strlen(const char *str)
 	return (i);
 }
 
-/* #include <stdio.h>
+/*  #include <stdio.h>
 int	main(void)
 {
 	char	*str;
