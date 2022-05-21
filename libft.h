@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 21:22:47 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/20 20:40:26 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/21 13:51:52 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ char	*ft_strchr(const char *string, int c);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strrchr(const char *s, int c);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 #endif
 

@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 18:58:22 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/18 17:13:09 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/21 13:42:15 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	ft_putendl_fd(char *s, int fd)
 {
     int    fd;
     
-    fd = open("42", O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
+    fd = open("87", O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
     if (fd == -1)
 	{
 		printf("open() error");

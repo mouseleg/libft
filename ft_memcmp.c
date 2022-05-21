@@ -1,34 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/25 20:32:46 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/21 12:48:39 by rgrollma         ###   ########.fr       */
+/*   Created: 2022/05/21 13:48:03 by rgrollma          #+#    #+#             */
+/*   Updated: 2022/05/21 14:48:44 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t	i;
+	size_t				i;
+	const unsigned char	*p1;
+	const unsigned char	*p2;
 
+	p1 = s1;
+	p2 = s2;
 	i = 0;
-	while (*(str + i) != '\0')
+	if (n != 0)
 	{
-		i++;
+		while (i < n)
+		{
+			if (p1[i] != p2[i])
+				return (p1[i] - p2[i]);
+			i++;
+		}
 	}
-	return (i);
+	return (0);
 }
 
 /* #include <stdio.h>
-int	main(void)
+int main (void)
 {
-	char	*str;
+	size_t n;
+	char string1[] = "Y";
+	char string2[] = "";
 
-	str = "15_Characters..";
-	printf("String_with_15_chars (15): %ld\n", ft_strlen(str));
+	n = 3;
+	ft_memcmp(string1, string2, n);
+	printf("%ld\n", n);
+
 } */
