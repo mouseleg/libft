@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/20 11:27:08 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/20 18:08:15 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/23 00:14:40 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		dst[dlen + count] = src[count];
 		count++;
 	}
-	dst[count + dlen] = '0';
+	dst[count + dlen] = '\0';
 	return (slen + dlen);
 }
 
