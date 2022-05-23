@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 21:22:47 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/21 15:28:52 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/23 13:14:52 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,8 @@ void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strrchr(const char *s, int c);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strjoin(char const *s1, char const *s2);
-
+char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
 #endif
 
 /* #ifndef LIBFT_H
