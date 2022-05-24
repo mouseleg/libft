@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 11:29:25 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/23 13:52:05 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/05/24 19:20:26 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end_trim++;
 		i++;
 	}
-	return (ft_substr(s1, (unsigned int)start_trim, slen - start_trim - end_trim));
+	return (ft_substr(s1, (unsigned int) \
+	start_trim, slen - start_trim - end_trim));
 }
 
 /* #include <stdio.h>
