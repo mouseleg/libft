@@ -6,7 +6,7 @@
 #    By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/18 16:36:57 by rgrollma          #+#    #+#              #
-#    Updated: 2022/05/26 19:54:22 by rgrollma         ###   ########.fr        #
+#    Updated: 2022/06/17 15:00:55 by rgrollma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,9 @@ ft_isascii.c ft_strdup.c ft_strlcat.c ft_strchr.c ft_calloc.c\
 ft_strrchr.c ft_memcmp.c ft_strjoin.c ft_strtrim.c ft_split.c\
 ft_strmapi.c ft_striteri.c ft_putstr_fd.c\
 
-BONUS = ft_lstadd_back.c ft_lstadd_front.c
+BONUS = ft_lstadd_back.c ft_lstadd_front.c \
+		ft_lstlast.c ft_lstnew.c ft_lstsize.c ft_lstdelone.c ft_lstiter.c \
+		ft_lstmap.c ft_lstclear.c
 
 OBJS = ${SRCS:.c=.o}
 
