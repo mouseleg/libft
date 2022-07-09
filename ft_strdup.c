@@ -6,13 +6,10 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 20:51:18 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/19 21:01:05 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/07/09 12:20:50 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stddef.h>
-#include <stdio.h>
 #include "libft.h"
 
 char	*ft_strdup(const char *s)

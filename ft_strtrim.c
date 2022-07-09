@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 11:29:25 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/24 19:20:26 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/07/09 12:15:35 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,25 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	i;
-	size_t	slen;
-	int		start_trim;
-	int		end_trim;
+	char	*trim;
+	int		i;
+	int		j;
+	int		str;
 
-	slen = ft_strlen(s1);
+	if (!s1 || !set)
+		return (NULL);
 	i = 0;
-	start_trim = 0;
-	end_trim = 0;
-	while (ft_strchr(set, s1[i]))
-	{
-		start_trim++;
+	while (ft_strchr(set, s1[i]) && s1[i] != '\0')
 		i++;
-	}
-	i = 0;
-	while (ft_strchr(set, s1[(int)slen - (int)i - 1]))
-	{
-		end_trim++;
-		i++;
-	}
-	return (ft_substr(s1, (unsigned int) \
-	start_trim, slen - start_trim - end_trim));
+	j = ft_strlen(s1);
+	while (ft_strrchr(set, s1[j - 1]) && s1[i] > 0)
+		j--;
+	str = j - i;
+	if (str < 0)
+		return (ft_strdup(""));
+	else
+		trim = ft_substr(s1, i, str);
+	return (trim);
 }
 
 /* #include <stdio.h>

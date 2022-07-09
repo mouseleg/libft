@@ -6,15 +6,10 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 18:58:22 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/21 13:42:15 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/07/09 12:20:30 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <stdio.h>
 #include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)

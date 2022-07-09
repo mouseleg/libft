@@ -6,11 +6,10 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/28 20:32:58 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/18 19:47:29 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/07/09 12:20:13 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)

@@ -6,11 +6,11 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 13:31:30 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/19 21:19:42 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/07/09 12:21:33 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

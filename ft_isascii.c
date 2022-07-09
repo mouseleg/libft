@@ -6,12 +6,10 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 00:44:57 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/19 20:21:25 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/07/09 12:19:42 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-//#include <ctype.h>
 #include "libft.h"
 
 int	ft_isascii(int c)

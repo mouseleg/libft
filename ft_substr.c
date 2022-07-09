@@ -6,13 +6,10 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 00:54:49 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/18 12:58:00 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/07/09 12:21:23 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)

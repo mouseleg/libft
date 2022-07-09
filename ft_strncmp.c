@@ -6,30 +6,27 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 20:32:57 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/18 20:07:25 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/07/09 11:57:01 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
 #include "libft.h"
 
 int	ft_strncmp(char *s1, char *s2, size_t len)
 
-{	
+{
+	size_t			i;
 	unsigned char	*string1;
 	unsigned char	*string2;
 
 	string1 = (unsigned char *)s1;
 	string2 = (unsigned char *)s2;
-	if (!len)
-		return (0);
-	while (string1 && string2 && len--)
+	i = 0;
+	while (i < len && (string1[i] != '\0' || string2[i] != '\0'))
 	{
-		if (*string1 != *string2)
-			return (*string1 - *string2);
-		string1++;
-		string2++;
+		if (*(string1 + i) != *(string2 + i))
+			return (*(string1 + i) - *(string2 + i));
+		i++;
 	}
 	return (0);
 }

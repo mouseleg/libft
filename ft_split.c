@@ -6,24 +6,24 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/23 13:15:38 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/24 18:28:21 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/07/09 12:34:30 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count_keep(char const *s, char c)
+int	word_count(char const *s, char c)
 {
 	int	i;
 	int	count;
 
 	i = 0;
+	count = 0;
 	if ((s == 0) || (s[0] == '\0'))
 		return (0);
-	count = 1;
-	while (s[i])
+	while (s[i] != '\0')
 	{
-		if (s[i] == c)
+		if (s[i] != c && (i == 0 || s[i - 1] == c))
 			count++;
 		i++;
 	}
@@ -37,23 +37,22 @@ char	**ft_split(char const *s, char c)
 	int		begin;
 	char	**cutstring;
 
-	begin = 0;
-	cutstring = (char **)ft_calloc(sizeof(char *), (count_keep(s, c) + 1));
-	if (!cutstring || !s)
-		return (NULL);
 	i = 0;
 	j = 0;
-	while (s[j])
+	cutstring = (char **)ft_calloc(sizeof(char *), (word_count(s, c) + 1));
+	if (!cutstring || !s)
+		return (NULL);
+	while (s[i])
 	{
-		while (s[j] == c)
-			j++;
-		i = j;
-		while (s[j] != c && s[j] != '\0')
-			j++;
-		if (i != j)
+		while (s[i] == c)
+			i++;
+		begin = i;
+		while (s[i] && s[i] != c)
+			i++;
+		if (begin != i)
 		{
-			cutstring[begin] = ft_substr(s, i, (j - i));
-			begin++;
+			cutstring[j] = ft_substr(s, begin, i - begin);
+			j++;
 		}
 	}
 	return (cutstring);
