@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/20 14:01:55 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/05/20 18:12:25 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/07/09 12:57:54 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	len_needle = 0;
 	if (needle[i] == '\0')
 		return ((char *) haystack);
-	if (!needle)
+	if (len == 0)
 		return (NULL);
 	while (needle[len_needle] != '\0')
 		len_needle++;
