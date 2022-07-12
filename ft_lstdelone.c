@@ -6,16 +6,11 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 15:13:40 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/07/09 11:07:11 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/07/10 19:06:39 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/* void    del(void *content)
-{
-    free(content);
-} */
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
@@ -25,6 +20,10 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 }
 
 /* 
+void    del(void *content)
+{
+    free(content);
+}
 int	main(void)
 {
 	t_list  *top;

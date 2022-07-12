@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 21:22:47 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/06/17 15:18:31 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/07/11 22:52:23 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int		ft_isalnum(int c);
 int		ft_isprint(int c);
 void	ft_putendl_fd(char *s, int fd);
 size_t	ft_strlen(const char *str);
-int		ft_strncmp(char *s1, char *s2, size_t len);
+int		ft_strncmp(const char *s1, const char *s2, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 int		ft_atoi(const char *nptr);
