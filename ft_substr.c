@@ -6,7 +6,7 @@
 /*   By: rgrollma <rgrollma@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 00:54:49 by rgrollma          #+#    #+#             */
-/*   Updated: 2022/07/09 12:21:23 by rgrollma         ###   ########.fr       */
+/*   Updated: 2022/07/12 18:34:38 by rgrollma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	i = 0;
 	slen = 0;
+	if (!s)
+		return (NULL);
 	while (s[slen] != '\0')
 	slen++;
 	if (start >= slen)
-		return ("\0");
+		return (ft_strdup(""));
 	if (len > slen)
 		len = slen - start;
 	substr = (char *)malloc (sizeof (char) * (len + 1));
